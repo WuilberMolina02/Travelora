@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Travelora | Vuela más, paga menos</title>
+
+    <link rel="stylesheet" href="css/Style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header" id="header">
+
+    <div class="top-bar">
+        <span>✈️ Vuelos económicos</span>
+        <span>🏆 Mejores precios</span>
+        <span>🔒 Reserva segura</span>
+        <span>24/7 Soporte</span>
+    </div>
+
+    <nav class="navbar">
+
+        <a href="#" class="logo">
+            <div class="logo-icon">✈</div>
+            <div>
+                <strong>Travelora</strong>
+                <small>Explore More. Worry Less.</small>
+            </div>
+        </a>
+
+        <div class="nav-links" id="navLinks">
+            <a href="#inicio" class="active">Inicio</a>
+            <a href="#vuelos">Vuelos</a>
+            <a href="#hoteles">Hoteles</a>
+            <a href="#combos">Combos</a>
+            <a href="#ofertas">Ofertas</a>
+            <a href="#destinos">Destinos</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+
+        <div class="nav-actions">
+            <button class="icon-btn">⌕</button>
+            <button class="icon-btn">♡</button>
+            <button class="icon-btn">♙</button>
+
+            <button class="primary-btn">
+                ✈ Reservar ahora
+            </button>
+
+            <button class="menu-btn" id="menuBtn">☰</button>
+        </div>
+
+    </nav>
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="inicio">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <div class="hero-text">
+
+            <span class="hero-tag">
+                ✨ Encuentra tu próxima aventura
+            </span>
+
+            <h1>
+                Vuelos al mundo
+                <span>solo los más baratos</span>
+            </h1>
+
+            <p>
+                Combinamos diferentes aerolíneas y rutas para ayudarte
+                a viajar más lejos pagando menos.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#vuelos" class="primary-btn">
+                    Explorar vuelos →
+                </a>
+
+                <a href="#combos" class="secondary-btn">
+                    Ver combos
+                </a>
+            </div>
+
+        </div>
+
+        <div class="floating-card card-one">
+            ✈️
+            <div>
+                <strong>Vuelos baratos</strong>
+                <small>Desde $199</small>
+            </div>
+        </div>
+
+        <div class="floating-card card-two">
+            🏨
+            <div>
+                <strong>Hoteles</strong>
+                <small>Hasta 50% OFF</small>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SEARCH ================= -->
+
+<section class="search-section" id="vuelos">
+
+    <div class="search-box">
+
+        <div class="search-tabs">
+
+            <button class="search-tab active" data-tab="flights">
+                ✈️ Vuelos
+            </button>
+
+            <button class="search-tab" data-tab="combos">
+                👥 Combos
+            </button>
+
+            <button class="search-tab" data-tab="hotels">
+                🏨 Hoteles
+            </button>
+
+        </div>
+
+
+        <div class="search-form">
+
+            <div class="input-group">
+                <label>Desde</label>
+                <div class="input-field">
+                    📍
+                    <input type="text" id="from" placeholder="San Salvador (SAL)">
+                </div>
+            </div>
+
+            <button class="swap-btn" id="swapBtn">⇄</button>
+
+            <div class="input-group">
+                <label>Hasta</label>
+                <div class="input-field">
+                    📍
+                    <input type="text" id="to" placeholder="Madrid (MAD)">
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>Salida</label>
+                <div class="input-field">
+                    📅
+                    <input type="date">
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>Regreso</label>
+                <div class="input-field">
+                    📅
+                    <input type="date">
+                </div>
+            </div>
+
+            <div class="input-group passengers">
+                <label>Pasajeros</label>
+
+                <select>
+                    <option>1 Adulto</option>
+                    <option>2 Adultos</option>
+                    <option>2 Adultos, 1 Niño</option>
+                    <option>Familia</option>
+                    <option>Grupo</option>
+                </select>
+            </div>
+
+            <button class="search-btn" id="searchBtn">
+                Buscar vuelos
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= DESTINATIONS ================= -->
+
+<section class="section" id="destinos">
+
+    <div class="section-heading">
+
+        <div>
+            <span class="section-label">✈ Destinos populares</span>
+
+            <h2>
+                Viaja a lugares increíbles
+            </h2>
+
+            <p>
+                Los destinos más buscados al mejor precio.
+            </p>
+        </div>
+
+        <a href="#" class="view-all">
+            Ver todos →
+        </a>
+
+    </div>
+
+
+    <div class="destination-grid">
+
+        <article class="destination-card">
+            <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=900&q=80">
+
+            <span class="discount">-60%</span>
+
+            <div class="destination-info">
+                <h3>París, Francia</h3>
+                <p>✈ Desde <strong>$349</strong></p>
+            </div>
+        </article>
+
+
+        <article class="destination-card">
+            <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=900&q=80">
+
+            <span class="discount green">-50%</span>
+
+            <div class="destination-info">
+                <h3>Tokio, Japón</h3>
+                <p>✈ Desde <strong>$499</strong></p>
+            </div>
+        </article>
+
+
+        <article class="destination-card">
+            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=80">
+
+            <span class="discount purple">-45%</span>
+
+            <div class="destination-info">
+                <h3>Dubái, EAU</h3>
+                <p>✈ Desde <strong>$399</strong></p>
+            </div>
+        </article>
+
+
+        <article class="destination-card">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80">
+
+            <span class="discount pink">-55%</span>
+
+            <div class="destination-info">
+                <h3>Cancún, México</h3>
+                <p>✈ Desde <strong>$259</strong></p>
+            </div>
+        </article>
+
+
+        <article class="destination-card">
+            <img src="https://images.unsplash.com/photo-1533929736458-ca588d08c8be?auto=format&fit=crop&w=900&q=80">
+
+            <span class="discount">-40%</span>
+
+            <div class="destination-info">
+                <h3>Londres, Inglaterra</h3>
+                <p>✈ Desde <strong>$429</strong></p>
+            </div>
+        </article>
+
+
+        <article class="destination-card">
+            <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=900&q=80">
+
+            <span class="discount green">-50%</span>
+
+            <div class="destination-info">
+                <h3>Bali, Indonesia</h3>
+                <p>✈ Desde <strong>$499</strong></p>
+            </div>
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ================= COMBOS ================= -->
+
+<section class="combos-section" id="combos">
+
+    <div class="section-heading">
+
+        <div>
+            <span class="section-label">👥 Combos de viaje</span>
+
+            <h2>
+                Elige cómo quieres viajar
+            </h2>
+
+            <p>
+                Opciones pensadas para parejas, familias y grupos.
+            </p>
+        </div>
+
+    </div>
+
+
+    <div class="combo-grid">
+
+        <article class="combo-card">
+
+            <div class="combo-image">
+                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80">
+            </div>
+
+            <div class="combo-content">
+
+                <span>💙 Más popular</span>
+
+                <h3>Para 2 personas</h3>
+
+                <p>
+                    Vuelo + hotel + experiencias para disfrutar en pareja.
+                </p>
+
+                <div class="price">
+                    Desde <strong>$699</strong>
+                </div>
+
+                <button class="outline-btn">
+                    Ver combo →
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <article class="combo-card featured">
+
+            <div class="combo-image">
+                <img src="https://images.unsplash.com/photo-1504150558240-0b4fd8946624?auto=format&fit=crop&w=900&q=80">
+            </div>
+
+            <div class="combo-content">
+
+                <span>👨‍👩‍👧‍👦 Mejor para familias</span>
+
+                <h3>Combo familiar</h3>
+
+                <p>
+                    Ahorra al viajar con toda la familia.
+                </p>
+
+                <div class="price">
+                    Desde <strong>$999</strong>
+                </div>
+
+                <button class="outline-btn">
+                    Ver combo →
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <article class="combo-card">
+
+            <div class="combo-image">
+                <img src="https://images.unsplash.com/photo-1539635278303-d4002c07eae3?auto=format&fit=crop&w=900&q=80">
+            </div>
+
+            <div class="combo-content">
+
+                <span>👥 Para grupos</span>
+
+                <h3>Combo grupal</h3>
+
+                <p>
+                    Precios especiales para grupos de viajeros.
+                </p>
+
+                <div class="price">
+                    Desde <strong>$799</strong>
+                </div>
+
+                <button class="outline-btn">
+                    Ver combo →
+                </button>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ================= HOTEL OFFERS ================= -->
+
+<section class="section" id="hoteles">
+
+    <div class="section-heading">
+
+        <div>
+            <span class="section-label">🏨 Hoteles & Resorts</span>
+
+            <h2>
+                Hospédate por menos
+            </h2>
+
+            <p>
+                Descuentos exclusivos en hoteles y resorts.
+            </p>
+        </div>
+
+        <a href="#" class="view-all">
+            Ver hoteles →
+        </a>
+
+    </div>
+
+
+    <div class="hotel-grid">
+
+        <article class="hotel-card">
+
+            <div class="hotel-image">
+                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=80">
+
+                <span>-55%</span>
+            </div>
+
+            <div class="hotel-content">
+                <div class="stars">★★★★★</div>
+                <h3>Luxury Beach Resort</h3>
+                <p>🏝️ Punta Cana</p>
+                <strong>Desde $89 <small>/ noche</small></strong>
+            </div>
+
+        </article>
+
+
+        <article class="hotel-card">
+
+            <div class="hotel-image">
+                <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=900&q=80">
+
+                <span>-50%</span>
+            </div>
+
+            <div class="hotel-content">
+                <div class="stars">★★★★★</div>
+                <h3>Grand Ocean Hotel</h3>
+                <p>🌊 Cancún, México</p>
+                <strong>Desde $110 <small>/ noche</small></strong>
+            </div>
+
+        </article>
+
+
+        <article class="hotel-card">
+
+            <div class="hotel-image">
+                <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=900&q=80">
+
+                <span>-45%</span>
+            </div>
+
+            <div class="hotel-content">
+                <div class="stars">★★★★★</div>
+                <h3>Dreams Resort</h3>
+                <p>🌴 República Dominicana</p>
+                <strong>Desde $135 <small>/ noche</small></strong>
+            </div>
+
+        </article>
+
+
+        <article class="hotel-card">
+
+            <div class="hotel-image">
+                <img src="https://images.unsplash.com/photo-1602002418082-a4443e081dd1?auto=format&fit=crop&w=900&q=80">
+
+                <span>-40%</span>
+            </div>
+
+            <div class="hotel-content">
+                <div class="stars">★★★★★</div>
+                <h3>Paradise Resort</h3>
+                <p>🏖️ Aruba</p>
+                <strong>Desde $99 <small>/ noche</small></strong>
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ================= OFFER BANNER ================= -->
+
+<section class="offer-section" id="ofertas">
+
+    <div class="offer-content">
+
+        <span>🔥 OFERTAS POR TIEMPO LIMITADO</span>
+
+        <h2>
+            Tu próximo viaje
+            <br>
+            puede costar menos.
+        </h2>
+
+        <p>
+            Descubre vuelos, hoteles y combos con precios especiales.
+        </p>
+
+        <button class="primary-btn">
+            Explorar ofertas →
+        </button>
+
+    </div>
+
+    <div class="offer-image">
+        <img src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=1200&q=80">
+    </div>
+
+</section>
+
+
+<!-- ================= BENEFITS ================= -->
+
+<section class="benefits">
+
+    <div class="benefit">
+        <div class="benefit-icon">🛡️</div>
+        <h3>Reserva segura</h3>
+        <p>Protegemos tus datos.</p>
+    </div>
+
+    <div class="benefit">
+        <div class="benefit-icon">💰</div>
+        <h3>Mejores precios</h3>
+        <p>Buscamos las opciones más económicas.</p>
+    </div>
+
+    <div class="benefit">
+        <div class="benefit-icon">🎧</div>
+        <h3>Soporte 24/7</h3>
+        <p>Estamos para ayudarte.</p>
+    </div>
+
+    <div class="benefit">
+        <div class="benefit-icon">↩️</div>
+        <h3>Cancelación fácil</h3>
+        <p>Condiciones claras y sencillas.</p>
+    </div>
+
+</section>
+
+
+<!-- ================= NEWSLETTER ================= -->
+
+<section class="newsletter">
+
+    <div>
+        <span>✈ Travelora</span>
+
+        <h2>
+            Recibe las mejores ofertas
+        </h2>
+
+        <p>
+            Suscríbete y descubre nuevos destinos antes que nadie.
+        </p>
+    </div>
+
+    <form id="newsletterForm">
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Tu correo electrónico"
+            required
+        >
+
+        <button type="submit">
+            Suscribirme
+        </button>
+
+    </form>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer id="contacto">
+
+    <div class="footer-main">
+
+        <div class="footer-brand">
+
+            <div class="logo">
+                <div class="logo-icon">✈</div>
+
+                <div>
+                    <strong>Travelora</strong>
+                    <small>Explore More. Worry Less.</small>
+                </div>
+            </div>
+
+            <p>
+                Tu compañero de viaje para descubrir el mundo
+                sin gastar de más.
+            </p>
+
+            <div class="socials">
+                <a href="#">f</a>
+                <a href="#">◎</a>
+                <a href="#">♪</a>
+                <a href="#">▶</a>
+            </div>
+
+        </div>
+
+
+        <div class="footer-column">
+            <h4>Empresa</h4>
+            <a href="#">Sobre nosotros</a>
+            <a href="#">Blog</a>
+            <a href="#">Contacto</a>
+            <a href="#">Carreras</a>
+        </div>
+
+
+        <div class="footer-column">
+            <h4>Ayuda</h4>
+            <a href="#">Preguntas frecuentes</a>
+            <a href="#">Reservas</a>
+            <a href="#">Política de privacidad</a>
+            <a href="#">Términos</a>
+        </div>
+
+
+        <div class="footer-column">
+            <h4>Destinos</h4>
+            <a href="#">Europa</a>
+            <a href="#">Asia</a>
+            <a href="#">América</a>
+            <a href="#">Caribe</a>
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+        <span>© 2026 Travelora. Todos los derechos reservados.</span>
+
+        <span>Hecho para viajeros ✈️</span>
+    </div>
+
+</footer>
+
+
+<!-- Toast -->
+
+<div class="toast" id="toast">
+    <span>✓</span>
+    <p id="toastMessage">Mensaje</p>
+</div>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
